@@ -51,9 +51,8 @@ class Animation:
         print('          ', sep='', end='\r', flush=True)
 
 
-def wait_for_it(func):
-    """Plays an animation while func is running.
-    Intended for the use as decorator.
+def waiting(func):
+    """Decorator that plays an animation while func is running.
     """
     @functools.wraps(func)
     def wrapped(*args, **kwargs):
