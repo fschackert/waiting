@@ -63,7 +63,7 @@ def waiting(func):
 
 if __name__ == '__main__':
 
-    @wait_for_it
+    @waiting
     def long_running_function():
         """For demonstration purposes."""
         time.sleep(2)
